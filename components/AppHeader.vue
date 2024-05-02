@@ -18,10 +18,13 @@
             <NuxtLink id="nav-link" to="/projects" :class="{ active: isActive('/projects') }">
               _projects
             </NuxtLink>
+            <NuxtLink id="nav-link-contact" to="/contact-me" :class="{ active: isActive('/contact-me')}">
+            _contact-me
+          </NuxtLink>
           </div>
 
-          <NuxtLink id="nav-link-contact" to="/contact-me" :class="{ active: isActive('/contact-me')}">
-            _contact-me
+          <NuxtLink id="nav-link-contact"  :class="{ active: isActive('/contact-me')}">
+            +251947054595
           </NuxtLink>
       
       </nav>

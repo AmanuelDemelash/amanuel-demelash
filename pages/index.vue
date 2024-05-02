@@ -7,7 +7,7 @@
 
 		<section class="hero">
 			<div class="mb-1 lg:mb-3">
-				<img class="rounded-full" src="/images/photo.jpg" alt="aman photo" width="160" height="160">
+				<img class="rounded-full shadow-greenfy" src="/images/photo.jpg" alt="aman photo" width="160" height="160">
 			</div>
 		
 			<div class="head">

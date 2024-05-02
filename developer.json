@@ -100,10 +100,15 @@
         "find_me_also_in": {
             "title": "find-me-also-in",
             "sources": {
-                "youtube": {
-                    "title": "YouTube channel",
-                    "url": "https://www.youtube.com/",
-                    "user": "username"
+                "linkedin":{
+                    "title":"Linkedin account",
+                    "url":"https://www.linkedin.com/in/amanuel-demelash-598127203/",
+                    "user":"amanuel-demelash-598127203"
+                },
+                "github": {
+                    "title": "Github profile",
+                    "url": "https://github.com/AmanuelDemelash",
+                    "user": "AmanuelDemelash"
                 },
                 "gurushots": {
                     "title": "GuruShots profile",
@@ -129,46 +134,77 @@
     },
     "projects": {
         "1": {
-            "title": "Hakime Et",
-            "description": "Tele-medicine app that connect user with helath service providers",
-            "img": "/images/projects/hakimea.jpg",
-            "tech": ["Flutter"],
-            "url": "https://github.com/AmanuelDemelash/hakimea"
+            "title": "Afromerkato",
+            "description": "afromerkato backend Nest js, GRaphql, vendure, angular admin side ",
+            "img": "/images/projects/afro.png",
+            "tech": ["Vue","Nestjs"],
+            "url": "https://www.afromerkato.com/",
+            "video":""
+
         },
         "2": {
             "title": "Hakime -Doc",
             "description": "Tele medicine app that connect and manage doctors with there client",
-            "img": "/images/projects/hakimelogo.jpg",
+            "img": "/images/projects/hakimedoc.png",
             "tech": ["Flutter"],
-            "url": "https://github.com/AmanuelDemelash/hakime_doctor_et"
+            "url": "https://github.com/AmanuelDemelash/hakime_doctor_et",
+            "video":""
+
         },
         "3": {
             "title": "Bazzar Ecommerce",
-            "description": "Ecommerce mobile app",
-            "img": "/images/projects/worldmap.png",
+            "description": "Ecommerce mobile app for Vendure storefront flutter template",
+            "img": "/images/projects/bazar.png",
             "tech": ["Flutter"],
-            "url": "https://github.com/AmanuelDemelash/flutter_vendure_stor"
+            "url": "https://github.com/AmanuelDemelash/flutter_vendure_stor",
+            "video":"/video/bazar.mp4"
+
         },
         "4": {
             "title": "Nile Shopal",
-            "description": "MUltivendure ecommerce",
-            "img": "/images/projects/ui-animations.png",
+            "description": "Multi-vendure ecommerce app",
+            "img": "/images/projects/nile.png",
             "tech": ["Flutter"],
-            "url": ""
+            "url": "https://play.google.com/store/apps/details?id=com.newnileshopal.com&pli=1",
+            "video":"/video/nile.mp4"
+
         },
         "5": {
-            "title": "Afromerkato",
-            "description": "afromerkato backend Nest js, GRaphql, vendure, angular admin side ",
-            "img": "/images/projects/afro.jpg",
-            "tech": ["Vue","Nestjs"],
-            "url": "https://www.afromerkato.com/"
+            "title": "Hakime Et",
+            "description": "Tele-medicine app that connect user with helath service providers",
+            "img": "/images/projects/hakime.png",
+            "tech": ["Flutter"],
+            "url": "https://github.com/AmanuelDemelash/hakimea",
+            "video":"/video/hakim.mp4"
         },
         "6": {
             "title": "Ethiolab",
             "description": "ethiolab ecommerce, vendure backend Nestjs, Graphql , Angular",
             "img": "/images/projects/ethiolab.png",
             "tech": ["Vue","Nestjs","Angular"],
-            "url": "https://www.shop.ethiolab.et/"
+            "url": "https://www.shop.ethiolab.et/",
+            "video":""
+
+
+        },
+        "7": {
+            "title": "City Truck",
+            "description": "Truck tracking app build with flutter",
+            "img": "/images/projects/truck.png",
+            "tech": ["Flutter"],
+            "url": "https://github.com/AmanuelDemelash/city_truck_driver",
+            "video":""
+
+
+        },
+        "8": {
+            "title": "Book Logger",
+            "description": "Book store flutter app",
+            "img": "/images/projects/book.png",
+            "tech": ["Flutter"],
+            "url": "https://github.com/AmanuelDemelash/city_truck_driver",
+            "video":""
+
         }
     }
 }

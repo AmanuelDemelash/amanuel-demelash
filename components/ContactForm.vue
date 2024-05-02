@@ -36,14 +36,25 @@ export default {
         }
     },
     mounted() {
-        document.getElementById("contact-form").addEventListener("submit", function(event) {
+        document.getElementById("contact-form").addEventListener("submit", async function(event) {
             event.preventDefault();
             const name = document.querySelector('input[name="name"]').value;
             const email = document.querySelector('input[name="email"]').value;
             const message = document.querySelector('textarea[name="message"]').value;
             
             // Here the code to send the email
-            
+            const {res,error} = await useFetch('https://api.resend.com/emails', {
+             method: 'POST',
+             headers:{
+               Authorization: 'Bearer re_Tay7VJ9n_Kvvxt7dM5yPEp6pb4XHoRb2n',
+             },
+             body: {
+                "from":email.value,
+                "to": "amanueldemelash12@gmail.com",
+               "subject":name.value,
+               "html": "<p>{message.value}</p>"
+             }
+  });
         });
     }
 }

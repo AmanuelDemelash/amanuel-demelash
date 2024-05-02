@@ -9,23 +9,26 @@
 
         <div id="project-card" class="flex flex-col">
             <div id="window">
-                <div class="absolute flex right-3 top-3">
-                <img v-for="tech in project.tech" :key="tech" :src="'/icons/techs/filled/' + tech + '.svg'" alt="" class="w-6 h-6 mx-1 hover:opacity-75">
-                </div>
-                <img id="showcase" :src="project.img" alt="" class="">
+                <img id="showcase" :src="project.img" :alt="project.title" class="">
             </div>
 
             <div class="pb-8 pt-6 px-6 border-top">
                 <p class="text-menu-text font-fira_retina text-sm mb-5">
                 {{ project.description }}
                 </p>
-                <div class="flex justify-start">
-                   <a id="view-button" :href="project.url" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg">
+                   <a id="view-button" :href="project.url" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg mr-3">
                     view-project
-                </a>
-                <button>View demo</button>
-                </div>
-               
+                   </a>
+                   <button id="view-button" @click="openDialog" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg">
+                    video-demo
+                   </button>
+              <div v-show="isOpen">
+                <div class="mt-3">
+            <iframe :v-if="project.video!=''" width="360" height="315" :src="project.video" frameborder="0" allowfullscreen></iframe>
+            <button @click="closeDialog" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg">Close</button>
+          </div>
+              </div>     
+  
             </div>
         </div>
     </div>
@@ -33,6 +36,13 @@
 
 <script setup>
 const { project, key, index } = defineProps(['project', 'key', 'index'])
+const isOpen=ref(false);
+ function openDialog() {
+      isOpen.value = true;
+    }
+   function closeDialog() {
+      isOpen.value = false;
+    }
 </script>
 
 <style scoped>
