@@ -6,6 +6,9 @@
     	<div class="css-blurry-gradient-green"></div>
 
 		<section class="hero">
+			<div class="mb-1 lg:mb-3">
+				<img class="rounded-full" src="/images/photo.jpg" alt="aman photo" width="160" height="160">
+			</div>
 		
 			<div class="head">
 				<span>
